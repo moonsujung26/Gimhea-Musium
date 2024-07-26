@@ -42,10 +42,10 @@ $(function mainVisual() {
                 return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
         },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        }
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // }
     });
 
 
