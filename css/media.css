@@ -1,0 +1,108 @@
+@media (max-width:768px) {
+    /* //header// */
+
+
+
+    #header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background: var(--wt-color);
+    }
+
+
+    #header.on {
+        background: transparent;
+        transition: 0.4s;
+    }
+
+    #header .h_inner {
+        position: relative;
+        max-width: calc(100% - 80px);
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 80px;
+    }
+
+    #header .gnb {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #header .gnb>ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #header .gnb>ul>li {}
+
+    #header .gnb>ul>li>a {
+        display: block;
+        font-size: 18px;
+        line-height: 80px;
+        font-weight: 500;
+        color: var(--body-color);
+        white-space: nowrap;
+    }
+
+    #header .utils {}
+
+    #header .utils>ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #header .utils>ul>li {}
+
+    #header .utils>ul>li>a {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--body-color);
+    }
+
+    #header .utils .lang {
+        position: relative;
+    }
+
+    #header .utils .lang::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -11px;
+        transform: translate(0, -50%);
+        width: 3px;
+        height: 3px;
+        background: var(--body-color);
+        margin-top: 1px;
+    }
+
+
+    #header .utils .search button {
+        font-size: 0;
+        width: 22px;
+        height: 22px;
+        background: url(../images/icon/search.svg)no-repeat center center;
+
+    }
+
+
+    #header .utils .menu>a {
+        display: block;
+        font-size: 0;
+        width: 24px;
+        height: 32px;
+        background: url(../images/icon/menu.svg)no-repeat bottom center/cover;
+        margin-top: 3px;
+    }
+
+}

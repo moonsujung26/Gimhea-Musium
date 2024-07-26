@@ -3,7 +3,9 @@
     --body-color: #333;
     --line-color: #ddd;
     --wt-color: #fff;
+
 }
+
 
 #header {
     position: fixed;
@@ -745,9 +747,6 @@
     opacity: 1;
     transition: 0.5s;
 }
-
-
-
 
 
 .mainIntroduction .tit {
