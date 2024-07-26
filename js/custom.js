@@ -31,6 +31,7 @@ $(function mainVisual() {
         speed: 1500,
         slideActiveClass: 'on',
         loop: true,
+        effect:'fade',
         navigation: {
             nextEl: ".mainVisualSlide .arrows .next",
             prevEl: ".mainVisualSlide .arrows .prev",
@@ -42,10 +43,10 @@ $(function mainVisual() {
                 return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
         },
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // }
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        }
     });
 
 
