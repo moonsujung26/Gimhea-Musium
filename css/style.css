@@ -658,11 +658,11 @@
 
 .mainIntroduction::before {
     content: "";
-
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 0;
+    transform: translate(0, -50%);
     width: 1410px;
     height: 1px;
     background: var(--pr-color);
@@ -676,19 +676,13 @@
 
 .mainIntroduction .inner .itm .txt strong {
     display: block;
-    margin-bottom: 8px;
     font-size: 22px;
     line-height: 24px;
 }
 
-.mainIntroduction .inner .itm .txt p {
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 400;
-}
-
 .mainIntroduction .inner .itm a {
     position: relative;
+    display: block;
 }
 
 
@@ -705,7 +699,6 @@
 }
 
 .mainIntroduction .inner .itm a:hover::before {
-
     opacity: 1;
     transition: 0.5s;
 }
@@ -734,6 +727,28 @@
     border: 1px solid var(--pr-color);
     filter: drop-shadow(0 16px 16px rgba(0, 0, 0, 0.2));
 }
+
+
+.mainIntroduction .inner .itm a p {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainIntroduction .inner .itm a:hover p {
+    color: var(--wt-color);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+
 
 .mainIntroduction .tit {
     margin-top: 80px;
